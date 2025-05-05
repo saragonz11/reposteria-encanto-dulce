@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="logo" src="/assets/images/Logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="pages/productos.html"
+                      >Tortas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/productos.html"
+                      >Trufas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/productos.html"
+                      >Alfajores</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Todos los productos</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/quienes-somos.html"
+                  >Quienes somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/carrito.html">Carrito</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success btn-outline-pink"
+                type="submit"
+              >
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="promos">
+        <h2>Promos</h2>
+        <div>
+          <div id="promos-carrusel" class="carousel slide mx-auto">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/assets/images/promos.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/assets/images/promos.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/assets/images/promos.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <button class="btn-ver-producto">Ver producto</button>
+      </section>
+      <section class="categorias">
+        <div class="row">
+          <a class="col btn text-center categoria" href="pages/productos.html">
+            <img src="/assets/images/Categoria-tortas.png" alt="Categoria 1" />
+            <h3>Torta</h3>
+          </a>
+          <a class="col btn text-center categoria" href="pages/productos.html">
+            <img src="/assets/images/Categoria-trufa.png" alt="Categoria 2" />
+            <h3>Trufas</h3>
+          </a>
+          <a class="col btn text-center categoria" href="pages/productos.html">
+            <img src="/assets/images/Categoria-alfa.png" alt="Categoria 3" />
+            <h3>Alfajor</h3>
+          </a>
+        </div>
+      </section>
+      <br />
+      <section class="productos">
+        <h2>Productos Destacados</h2>
+        <div
+          id="carouselProductos"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div
+                  class="card mx-2 px-0"
+                  style="width: 18rem"
+                  nombre-producto="Trufas"
+                >
+                  <img
+                    src="/assets/images/Trufas rosas.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="row porcion-contenedor">
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-trufa.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">1</span>
+                      </div>
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-trufa.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">8</span>
+                      </div>
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-trufa.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">12</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-2">
+                      <button class="btn btn-rosa">Agregar al carrito</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="card mx-2 px-0"
+                  style="width: 18rem"
+                  nombre-producto="Torta"
+                >
+                  <img
+                    src="/assets/images/torta sola.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="row porcion-contenedor">
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-tortas.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">1</span>
+                      </div>
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-tortas.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">8</span>
+                      </div>
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-tortas.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">12</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-2">
+                      <button class="btn btn-rosa">Agregar al carrito</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="card mx-2 px-0"
+                  style="width: 18rem"
+                  nombre-producto="Alfajores"
+                >
+                  <img
+                    src="/assets/images/Alfajores.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="row porcion-contenedor">
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-alfa.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">1</span>
+                      </div>
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-alfa.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">8</span>
+                      </div>
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-alfa.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">12</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-2">
+                      <button class="btn btn-rosa">Agregar al carrito</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div
+                  class="card mx-2"
+                  style="width: 18rem"
+                  nombre-producto="Torta y Alfajore"
+                >
+                  <img
+                    src="/assets/images/Tortas y alfajores.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <div class="row porcion-contenedor">
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-tortas.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">1</span>
+                      </div>
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-alfa.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">8</span>
+                      </div>
+                      <div
+                        class="porcion mx-auto d-flex flex-column align-items-center justify-content-center"
+                      >
+                        <img
+                          src="/assets/images/Categoria-tortas.png"
+                          class="icono-porcion"
+                        />
+                        <span class="texto-porcion">12</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-2">
+                      <button class="btn btn-rosa">Agregar al carrito</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselProductos"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselProductos"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <br />
+      </section>
+    </main>
+
+    <footer class="bg-light text-center py-4 border-top">
+      <h2 class="mb-3">Contáctanos</h2>
+      <div class="mb-3">
+        <a href="https://facebook.com" target="_blank" class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/11275898" target="_blank" class="social-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <div>
+        <small>Dirección</small>
+      </div>
+      <img
+        class="ubicacion mx-auto d-block"
+        src="/assets/images/ubicacion.png"
+      />
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+</html>

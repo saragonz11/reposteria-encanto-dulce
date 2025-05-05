@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+
+    <title>Productos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="logo" src="/assets/images/Logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="productos.html">Tortas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="productos.html">Trufas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="productos.html">Alfajores</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Todos los productos</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">Carrito</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success btn-outline-pink"
+                type="submit"
+              >
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center mb-4 p-3 cart-card">
+                <img
+                  class="cart-product-img me-3"
+                  src="/assets/images/torta sola.png"
+                  alt="Producto 1"
+                />
+                <div class="flex-grow-1">
+                  <h3 class="cart-product-title">Nombre del producto 1</h3>
+                  <p>Descripción del producto 1</p>
+                  <p class="mb-2">Precio unitario: $10.00</p>
+                  <div class="d-flex align-items-center">
+                    <div class="cart-quantity-controls">
+                      <button
+                        class="btn btn-outline-secondary cart-quantity-btn"
+                      >
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <span class="cart-quantity-value">1</span>
+                      <button
+                        class="btn btn-outline-secondary cart-quantity-btn"
+                      >
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <p class="mb-0 cart-total">Total: $10.00</p>
+                  </div>
+                </div>
+                <button class="btn btn-detalle ms-3">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </li>
+              <li class="d-flex align-items-center mb-4 p-3 cart-card">
+                <img
+                  class="cart-product-img me-3"
+                  src="/assets/images/Trufas rosas.png"
+                  alt="Producto 1"
+                />
+                <div class="flex-grow-1">
+                  <h3 class="cart-product-title">Nombre del producto 1</h3>
+                  <p>Descripción del producto 1</p>
+                  <p class="mb-2">Precio unitario: $10.00</p>
+                  <div class="d-flex align-items-center">
+                    <div class="cart-quantity-controls">
+                      <button
+                        class="btn btn-outline-secondary cart-quantity-btn"
+                      >
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <span class="cart-quantity-value">1</span>
+                      <button
+                        class="btn btn-outline-secondary cart-quantity-btn"
+                      >
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <p class="mb-0 cart-total">Total: $10.00</p>
+                  </div>
+                </div>
+                <button class="btn btn-detalle ms-3">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="cart-sticky">
+              <div class="p-4 cart-card mb-4">
+                <h3 class="cart-product-title mb-3">Resumen del pedido</h3>
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Subtotal:</span>
+                  <span>$20.00</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span>Envío:</span>
+                  <span>$5.00</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <span>Total:</span>
+                  <span class="cart-total">$25.00</span>
+                </div>
+                <div class="cart-input-group">
+                  <label for="codigo" class="cart-form-label"
+                    >Código de descuento</label
+                  >
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="codigo"
+                      placeholder="Ingresa tu código"
+                    />
+                    <button class="btn btn-outline-secondary" type="button">
+                      Aplicar
+                    </button>
+                  </div>
+                </div>
+                <button class="btn btn-rosa cart-checkout-btn">Comprar</button>
+              </div>
+
+              <div class="p-4 cart-card">
+                <h3 class="cart-product-title mb-3">Datos de envío</h3>
+                <form id="formulario">
+                  <div class="cart-input-group">
+                    <label for="nombre" class="cart-form-label"
+                      >Nombre completo:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      required
+                    />
+                  </div>
+                  <div class="cart-input-group">
+                    <label for="direccion" class="cart-form-label"
+                      >Dirección:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="direccion"
+                      required
+                    />
+                  </div>
+                  <div class="cart-input-group">
+                    <label for="telefono" class="cart-form-label"
+                      >Teléfono:</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefono"
+                      required
+                    />
+                  </div>
+                  <div class="cart-input-group">
+                    <label for="notas" class="cart-form-label"
+                      >Notas para la entrega:</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="notas"
+                      rows="2"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-light text-center py-4 border-top">
+      <h2 class="mb-3">Contáctanos</h2>
+      <div class="mb-3">
+        <a href="https://facebook.com" target="_blank" class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/11275898" target="_blank" class="social-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <div>
+        <small>Dirección</small>
+      </div>
+      <img
+        class="ubicacion mx-auto d-block"
+        src="/assets/images/ubicacion.png"
+      />
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+</html>

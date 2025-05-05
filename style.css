@@ -1,0 +1,286 @@
+/* ===== ESTILOS COMPARTIDOS ===== */
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bs-primary: #c599b6;
+}
+
+body {
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+/* Componentes compartidos */
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* Tipografía */
+h2 {
+  color: #8c4765;
+  text-align: center;
+}
+
+/* Botones */
+.btn-ver-producto {
+  background-color: #fff;
+  color: #c599b6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-outline-pink {
+  color: #c599b6 !important;
+  border-color: #c599b6 !important;
+}
+
+.btn-outline-pink:hover {
+  background-color: #c599b6 !important;
+  color: #fff !important;
+}
+
+.btn-rosa {
+  color: #fff7f3;
+  background-color: #e6b2ba;
+}
+
+.btn-rosa:hover {
+  color: #fff7f3;
+  background-color: #e6b2bab4;
+}
+
+.btn-detalle {
+  color: #fff7f3;
+  background-color: #c599b6;
+}
+
+.btn-detalle:hover {
+  color: #fff7f3;
+  background-color: #e6b2bab4;
+}
+
+/* ===== ESTILOS PARA LA PÁGINA DE INICIO ===== */
+/* Sección de promociones */
+#promos {
+  background-color: #c599b6;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+#promos h2 {
+  color: #fff;
+  text-align: center;
+}
+
+#promos-carrusel {
+  width: 400px;
+}
+
+/* Tarjetas de productos */
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 400px !important;
+}
+
+.card::after {
+  content: attr(nombre-producto);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #e6b2bab4;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Indicadores de porciones */
+.porcion {
+  border-radius: 100%;
+  background-color: #e6b2ba;
+  width: 50px;
+  height: 50px;
+}
+
+.porcion-contenedor {
+  background-color: #fff7f3;
+  padding: 10px;
+}
+
+.icono-porcion {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100%) brightness(5);
+}
+
+.texto-porcion {
+  color: #fff;
+  height: 10px;
+  font-size: 9px;
+  position: absolute;
+  padding-top: 20px;
+}
+
+/* Categorías */
+.categorias {
+  border-color: #fff7f3;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: #fff7f3;
+}
+
+.categorias h3 {
+  color: #c49fa4;
+}
+
+.categoria {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.categoria:hover {
+  border-color: #fff7f3;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #e6b2ba7c;
+}
+
+.categoria img {
+  width: 100px;
+  height: auto;
+}
+
+/* ===== ESTILOS DE LA PÁGINA DE PRODUCTOS ===== */
+.producto-img {
+  width: 300px;
+  height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* ===== ESTILOS DE LA PÁGINA DEL CARRITO ===== */
+.cart-heading {
+  color: #8c4765;
+  text-align: center;
+}
+
+.cart-product-title {
+  color: #8c4765;
+}
+
+.cart-card {
+  background-color: white;
+  border-radius: 0.375rem;
+  border: 1px solid #dee2e6;
+}
+
+.cart-sticky {
+  position: sticky;
+  top: 20px;
+}
+
+.cart-product-img {
+  width: 300px;
+  height: auto;
+}
+
+.cart-quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.cart-quantity-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.cart-quantity-value {
+  margin: 0 0.5rem;
+}
+
+.cart-total {
+  font-weight: bold;
+}
+
+.cart-form-label {
+  color: #8c4765;
+  margin-bottom: 0.5rem;
+}
+
+.cart-input-group {
+  margin-bottom: 1rem;
+}
+
+.cart-checkout-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* ===== ESTILOS DEL FOOTER ===== */
+footer h2 {
+  color: #8c4765;
+  text-align: center;
+}
+
+.ubicacion {
+  width: 400px;
+}
+
+.social-icon {
+  color: #c599b6;
+  font-size: 32px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+/* ===== ESTILOS DE LA PÁGINA QUIÉNES SOMOS ===== */
+.imagenes-quienes-somos {
+  width: 400px;
+  height: auto;
+}
+
+/* ===== ESTILOS ESPECÍFICOS DEL CARRITO ===== */
+#carrito-tus-productos {
+  border-color: #c599b6;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+#carrito-datos-envio {
+  border-color: #c599b6;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 20px;
+}
