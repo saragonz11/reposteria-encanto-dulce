@@ -74,11 +74,35 @@
   transform: scale(1.05);
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes latido {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 .porcion {
   border-radius: 100%;
   background-color: #e6b2ba;
   width: 50px;
   height: 50px;
+  animation: aparecer 0.6s ease-out;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.porcion:hover {
+  animation: latido 0.6s infinite;
+  filter: brightness(1.1);
 }
 
 .porcion-contenedor {
@@ -90,6 +114,9 @@
   width: 40px;
   height: 40px;
   filter: grayscale(100%) brightness(5);
+}
+.porcion:hover .icono-porcion {
+  transform: rotate(10deg);
 }
 
 .texto-porcion {
