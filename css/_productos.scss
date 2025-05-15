@@ -1,0 +1,11 @@
+// _productos.scss
+
+.producto-img {
+  width: 300px;
+  height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}

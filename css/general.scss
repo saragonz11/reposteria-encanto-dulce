@@ -1,0 +1,37 @@
+// general.scss
+
+@use "variables" as *;
+@use "mixins";
+@use "buttons";
+@use "promos";
+@use "cards";
+@use "porciones";
+@use "categorias";
+@use "productos";
+@use "carrito";
+@use "footer";
+@use "quienes-somos";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bs-primary: #{$primary};
+}
+
+body {
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+h2 {
+  color: $secondary;
+  text-align: center;
+}

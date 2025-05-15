@@ -1,0 +1,28 @@
+// _porciones.scss
+@use "variables" as *;
+
+.porcion {
+  border-radius: 100%;
+  background-color: $light-pink;
+  width: 50px;
+  height: 50px;
+}
+
+.porcion-contenedor {
+  background-color: $very-light-pink;
+  padding: 10px;
+}
+
+.icono-porcion {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100%) brightness(5);
+}
+
+.texto-porcion {
+  color: #fff;
+  height: 10px;
+  font-size: 9px;
+  position: absolute;
+  padding-top: 20px;
+}

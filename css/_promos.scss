@@ -1,0 +1,17 @@
+// promos.scss
+@use "variables" as *;
+
+#promos {
+  background-color: $primary;
+  border-radius: 20px;
+  padding: 20px;
+
+  h2 {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+#promos-carrusel {
+  width: 400px;
+}

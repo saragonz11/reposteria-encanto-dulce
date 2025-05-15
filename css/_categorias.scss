@@ -1,0 +1,28 @@
+// _categorias.scss
+@use "variables" as *;
+
+.categorias {
+  border: 2px solid $very-light-pink;
+  border-radius: 20px;
+  background-color: $very-light-pink;
+
+  h3 {
+    color: #c49fa4;
+  }
+}
+
+.categoria {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+
+  &:hover {
+    border: 2px solid $very-light-pink;
+    background-color: rgba($light-pink, 0.49);
+  }
+
+  img {
+    width: 100px;
+    height: auto;
+  }
+}

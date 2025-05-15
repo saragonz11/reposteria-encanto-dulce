@@ -1,48 +1,18 @@
-/* ===== ESTILOS COMPARTIDOS ===== */
-/* Estilos base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --bs-primary: #c599b6;
-}
-
-body {
-  font-family: "Libre Baskerville", sans-serif;
-}
-
-/* Componentes compartidos */
-#logo {
-  width: 100px;
-  height: 100px;
-}
-
-/* Tipografía */
-h2 {
-  color: #8c4765;
-  text-align: center;
-}
-
-/* Botones */
 .btn-ver-producto {
-  background-color: #fff;
-  color: #c599b6;
-  border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  border: none;
+  background-color: #fff;
+  color: #c599b6;
 }
 
 .btn-outline-pink {
   color: #c599b6 !important;
   border-color: #c599b6 !important;
 }
-
 .btn-outline-pink:hover {
   background-color: #c599b6 !important;
   color: #fff !important;
@@ -52,30 +22,23 @@ h2 {
   color: #fff7f3;
   background-color: #e6b2ba;
 }
-
 .btn-rosa:hover {
-  color: #fff7f3;
-  background-color: #e6b2bab4;
+  background-color: rgba(230, 178, 186, 0.7);
 }
 
 .btn-detalle {
   color: #fff7f3;
   background-color: #c599b6;
 }
-
 .btn-detalle:hover {
-  color: #fff7f3;
-  background-color: #e6b2bab4;
+  background-color: rgba(230, 178, 186, 0.7);
 }
 
-/* ===== ESTILOS PARA LA PÁGINA DE INICIO ===== */
-/* Sección de promociones */
 #promos {
   background-color: #c599b6;
   border-radius: 20px;
-  padding: 20px 20px;
+  padding: 20px;
 }
-
 #promos h2 {
   color: #fff;
   text-align: center;
@@ -85,20 +48,18 @@ h2 {
   width: 400px;
 }
 
-/* Tarjetas de productos */
 .card {
   position: relative;
   overflow: hidden;
   width: 400px !important;
 }
-
 .card::after {
   content: attr(nombre-producto);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #e6b2bab4;
+  background-color: rgba(230, 178, 186, 0.7);
   color: black;
   text-align: center;
   padding: 10px;
@@ -106,16 +67,13 @@ h2 {
   transition: opacity 0.3s ease;
   font-size: 1.2rem;
 }
-
 .card:hover::after {
   opacity: 1;
 }
-
 .card:hover .card-img-top {
   transform: scale(1.05);
 }
 
-/* Indicadores de porciones */
 .porcion {
   border-radius: 100%;
   background-color: #e6b2ba;
@@ -142,15 +100,11 @@ h2 {
   padding-top: 20px;
 }
 
-/* Categorías */
 .categorias {
-  border-color: #fff7f3;
-  border-width: 2px;
-  border-style: solid;
+  border: 2px solid #fff7f3;
   border-radius: 20px;
   background-color: #fff7f3;
 }
-
 .categorias h3 {
   color: #c49fa4;
 }
@@ -160,23 +114,15 @@ h2 {
   padding: 10px;
   margin: 10px;
 }
-
 .categoria:hover {
-  border-color: #fff7f3;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 10px;
-  background-color: #e6b2ba7c;
+  border: 2px solid #fff7f3;
+  background-color: rgba(230, 178, 186, 0.49);
 }
-
 .categoria img {
   width: 100px;
   height: auto;
 }
 
-/* ===== ESTILOS DE LA PÁGINA DE PRODUCTOS ===== */
 .producto-img {
   width: 300px;
   height: auto;
@@ -187,14 +133,11 @@ h2 {
   filter: invert(1);
 }
 
-/* ===== ESTILOS DE LA PÁGINA DEL CARRITO ===== */
-.cart-heading {
+.cart-heading,
+.cart-product-title,
+.cart-form-label {
   color: #8c4765;
   text-align: center;
-}
-
-.cart-product-title {
-  color: #8c4765;
 }
 
 .cart-card {
@@ -232,11 +175,6 @@ h2 {
   font-weight: bold;
 }
 
-.cart-form-label {
-  color: #8c4765;
-  margin-bottom: 0.5rem;
-}
-
 .cart-input-group {
   margin-bottom: 1rem;
 }
@@ -246,10 +184,22 @@ h2 {
   margin-top: 1rem;
 }
 
-/* ===== ESTILOS DEL FOOTER ===== */
+#carrito-tus-productos,
+#carrito-datos-envio {
+  border: 2px solid #c599b6;
+  border-radius: 20px;
+}
+
+#carrito-datos-envio {
+  padding: 20px;
+}
+
 footer h2 {
   color: #8c4765;
   text-align: center;
+}
+footer a {
+  text-decoration: none;
 }
 
 .ubicacion {
@@ -263,24 +213,33 @@ footer h2 {
   transition: color 0.3s ease;
 }
 
-/* ===== ESTILOS DE LA PÁGINA QUIÉNES SOMOS ===== */
 .imagenes-quienes-somos {
   width: 400px;
   height: auto;
 }
 
-/* ===== ESTILOS ESPECÍFICOS DEL CARRITO ===== */
-#carrito-tus-productos {
-  border-color: #c599b6;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#carrito-datos-envio {
-  border-color: #c599b6;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 20px;
-  padding: 20px;
+:root {
+  --bs-primary: #c599b6;
 }
+
+body {
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+h2 {
+  color: #8c4765;
+  text-align: center;
+}
+
+/*# sourceMappingURL=general.css.map */

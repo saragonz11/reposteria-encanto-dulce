@@ -1,0 +1,36 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.btn-ver-producto {
+  @include base-btn;
+  background-color: #fff;
+  color: $primary;
+}
+
+.btn-outline-pink {
+  color: $primary !important;
+  border-color: $primary !important;
+
+  &:hover {
+    background-color: $primary !important;
+    color: #fff !important;
+  }
+}
+
+.btn-rosa {
+  color: $very-light-pink;
+  background-color: $light-pink;
+
+  &:hover {
+    background-color: rgba($light-pink, 0.7);
+  }
+}
+
+.btn-detalle {
+  color: $very-light-pink;
+  background-color: $primary;
+
+  &:hover {
+    background-color: rgba($light-pink, 0.7);
+  }
+}
